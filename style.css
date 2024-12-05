@@ -10,6 +10,14 @@
   --Grayish-blue: hsl(210, 4%, 67%);
   --White: hsl(0, 0%, 100%);
   --Font-size: 18px;
+  --font-family: "Barlow", sans-serif;
+  --font-weight: 600, 700, 900;
+  --font-style: normal;
+  --font-family: "Fraunces", serif;
+  --font-optical-sizing: auto;
+  --font-weight: <weight>;
+  --font-style: normal;
+  --font-variation-settings: "SOFT" 0, "WONK" 0;
 }
 
 * {
@@ -17,6 +25,7 @@
   /* padding: 0; */
   margin: 0;
   /* background-color: black; */
+  font-family: var(--font-family);
 }
 
 body {
@@ -273,4 +282,12 @@ body {
   display: flex;
   gap: 20px;
   margin-top: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
