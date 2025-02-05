@@ -28,28 +28,25 @@
 }
 
 .container-1 {
-  max-height: 100%;
-  height: 500px;
   background-image: url("./images/desktop/image-header.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 3rem 3rem 23rem 3rem;
 }
 
 .navigation-bar {
   display: flex;
   justify-content: space-between;
-  padding: 32px 36px;
-  /* font-size: var(--Font-size); */
-  /* font-family: "Fraunces", sans-serif; */
+  margin-bottom: 4rem;
 }
 
 .logo img {
-  height: 40px;
+  height: 32px;
 }
 
 .nav-link {
   list-style: none;
-  padding-top: 24px;
 }
 
 .nav-link li {
@@ -61,7 +58,7 @@
   display: flex;
   color: var(--White);
   font-family: "Barlow", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   gap: 20px;
 }
@@ -77,13 +74,16 @@ ul .contact {
   font-family: "Fraunces", sans-serif;
 }
 
+.section-1-content {
+}
+
 .section-heading {
   color: var(--White);
   font-size: 64px;
   text-align: center;
   word-spacing: 5px;
   letter-spacing: 10px;
-  margin-top: 48px;
+  margin-top: 45px;
 }
 
 .arrow-down {
@@ -96,23 +96,25 @@ ul .contact {
 /* TRANSFORM */
 .transform {
   display: flex;
-  background-image: url("./images/desktop/image-transform.jpg");
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: right;
-  padding: 100px 48px;
+  flex-direction: row-reverse;
 }
 
-.transform .text-content {
+.image {
+  width: 50%;
+  height: 100%;
+}
+
+.text-content- {
   width: 40%;
-  margin: auto 20px auto 60px;
-  /* text-align: left; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .transform-head {
-  font-size: 28px;
-  width: 40%;
-  /* line-height: ; */
+  width: 50%;
+  font-size: 40px;
+  line-height: 40px;
   margin-bottom: 32px;
 }
 
@@ -129,24 +131,21 @@ ul .contact {
 /* STAND-OUT */
 .stand-out {
   display: flex;
-  flex-direction: row-reverse;
-  background-image: url("./images/desktop/image-stand-out.jpg");
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: left;
-  padding: 100px 48px;
-  object-fit: cover;
+  flex-direction: row;
 }
 
-.stand-out .text-content {
+.text-content-- {
   width: 40%;
-  margin: auto 20px auto 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
 }
 
 .standout-head {
-  font-size: 28px;
-  width: 60%;
-  /* line-height: 30px; */
+  width: 70%;
+  font-size: 40px;
+  line-height: 40px;
   margin-bottom: 32px;
 }
 
